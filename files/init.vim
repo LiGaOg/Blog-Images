@@ -1,3 +1,4 @@
+
 " ---------------------------------------
 let mapleader = " "
 
@@ -59,6 +60,8 @@ Plug 'sainnhe/everforest'
 Plug 'liuchengxu/vista.vim'
 Plug 'tpope/vim-commentary'
 Plug 'ryanoasis/vim-devicons'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'machakann/vim-highlightedyank'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -107,6 +110,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+noremap <C-f> :FZF<CR>
+noremap <C-a> :Ag<CR>
 " ---------------------------------------
 let g:coc_global_extensions = [ "coc-explorer" ,
 				\"coc-snippets",
