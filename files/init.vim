@@ -29,6 +29,10 @@ map zj :tabp<CR>
 map tt :set splitright<CR>:vsplit<CR>:term<CR>i
 tnoremap <esc> <C-\><C-N>
 
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i
 " -------------------------------------------
 set nu
 set wrap
